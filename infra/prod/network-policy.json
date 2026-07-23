@@ -1,0 +1,6 @@
+{
+  "database": {
+    "port": 5432,
+    "allowedCidrs": ["10.0.0.0/8"]
+  }
+}

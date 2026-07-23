@@ -1,0 +1,17 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate configuration syntax
+        run: |
+          node -e "JSON.parse(require('fs').readFileSync('infra/prod/network-policy.json', 'utf8'))"

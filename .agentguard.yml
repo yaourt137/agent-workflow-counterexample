@@ -1,0 +1,12 @@
+agent_actors:
+  - clawdia475
+
+sensitive_paths:
+  - infra/prod/**
+
+deployment:
+  branch: main
+  environment: production
+
+invariants:
+  - fresh_independent_human_approval
