@@ -22,3 +22,7 @@ by a human.
 
 Do not use this configuration as a template for real projects: the branch
 protection settings are deliberately misconfigured for demonstration purposes.
+
+## Deployment
+
+Production deployment runs automatically after changes merge into `main`.
